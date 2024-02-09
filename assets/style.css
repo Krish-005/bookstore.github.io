@@ -1,0 +1,101 @@
+/* Importing some fonts */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Protest+Strike&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('https://miro.medium.com/v2/resize:fit:1200/1*6Jp3vJWe7VFlFHZ9WhSJng.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px) brightness(70%);
+    padding-bottom: 20px;
+ }
+
+ #container{
+    height: 870px;
+}
+
+#nav{
+    position: sticky;
+    top: 0;
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0, 0.4); /* Black opacity -> see through*/
+    backdrop-filter: blur(12px);
+    width: calc(100% - 40px);
+    height: 90px;
+    border: 1px white solid;
+    border-radius: 10px;
+    padding: 0px 40px;
+    z-index: 1;
+}
+
+#nav div{
+    display: flex;
+}
+
+.nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 190px;
+    border-radius: 15px;
+}
+
+.nav-button:hover{
+    background-color: white;
+}
+
+.nav-button:hover a{
+    color: rgba(0,0,0);
+}
+
+.nav-button a{
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    font-family: 'Protest Strike', sans-serif;
+}
+
+#heading{
+    position: sticky;
+    top: 130px;
+    margin-top: 300px;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    font-family: 'AudioWide', sans-serif;
+    z-index: -1;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 0px 20px;
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    height: 600px;
+    background-color: rgba(255,255,255,0.87);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+#content div{
+    font-size: 40px;
+    font-family: 'Protest Riot', sans-serif;
+}
